@@ -49,7 +49,7 @@ async def on_message(message):
     if message.content.startswith('+loli'):
         await message.channel.send("{} likes little schoolgirls >:(".format(message.author))
     if message.content.startswith('+spamtest'):
-        msg = "@" + message.author
+        msg = "@" + string(message.author)
         await message.channel.send(msg)
     if message.content.startswith('+sin'):
         await message.channel.send('aapko apne paapon ka pashchatap karna chahiye| vah tumhe nasht kar denge|aap koi mauka nahi khade hai| tum usko haath par bhuktoge| pachtana|')
