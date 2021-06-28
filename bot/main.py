@@ -12,6 +12,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     msg = ""
+    user1 = message.author
     if message.author == client.user:
         return
 
@@ -49,7 +50,7 @@ async def on_message(message):
     if message.content.startswith('+loli'):
         await message.channel.send("{} likes little schoolgirls >:(".format(message.author))
     if message.content.startswith('+spamtest'):
-        await message.channel.send("hi"+ <@dororo9523>)
+        await message.channel.send("hi" + user.mention)
     if message.content.startswith('+sin'):
         await message.channel.send('aapko apne paapon ka pashchatap karna chahiye| vah tumhe nasht kar denge|aap koi mauka nahi khade hai| tum usko haath par bhuktoge| pachtana|')
 client.run("ODU3NDY3MjIyODM3NTU5Mjk2.YNQAlA.N8wDKWubrCDivSnZemT_08nPujA")
