@@ -24,7 +24,7 @@ async def on_message(message):
     if message.content.startswith('+ID'):
         await message.channel.send(message.author)
     if message.content.startswith('+help'):
-        await message.channel.send('no')
+        await message.channel.send('bot with text commands which returns mildly funny stuff. Made by @dororo#9523 if you want something added, or type +commdands.')
     if message.content.startswith('+who'):
         await message.channel.send('ahobot at your service!')
     if message.content.startswith('+owo'):
