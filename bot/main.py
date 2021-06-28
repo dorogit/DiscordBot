@@ -40,6 +40,8 @@ async def on_message(message):
 
     if message.content.startswith('+owo'):
         await message.channel.send('uwu')
+    if message.content.startswith('+aho'):
+        await message.channel.send('whomst has summoned the almighty one')
     if message.content.startswith('+food'):
         msg = 'no food for {} hmph!'.format(message.author)
         await message.channel.send(msg)
