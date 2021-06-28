@@ -8,12 +8,9 @@ client = discord.Client()
 async def on_ready():
     print('We have logged in as {0.user}'.format(client))
 
-countWho = 0
-
 
 @client.event
 async def on_message(message):
-    global countWho
     msg = ""
     if message.author == client.user:
         return
@@ -29,15 +26,7 @@ async def on_message(message):
     if message.content.startswith('+help'):
         await message.channel.send('no')
     if message.content.startswith('+who'):
-        countWho += 1
-        if countWho < 3:
-            await message.channel.send('ahobot at your service!')
-            print(countWho)
-        elif countWho > 2 and countWho < 6:
-            await message.channel.send('ugh...ahobot at your service!')
-        else:
-            await message.channel.send('kam bol madarchod')
-
+        await message.channel.send('ahobot at your service!')
     if message.content.startswith('+owo'):
         await message.channel.send('uwu')
     if message.content.startswith('+flip'):
@@ -52,7 +41,7 @@ async def on_message(message):
         await message.channel.send(msg)
     if message.content.startswith('+commands'):
         await message.channel.send('only these commands are available :')
-        await message.channel.send('+hello,+qt,+tensai (this one is really cool),+ID,+help,+who,+owo,+food,+gae,+commands,+qtmode, +recipe, +sin,+loli  .... YET')
+        await message.channel.send('+hello,+qt,+tensai (this one is really cool),+ID,+help,+who,+owo,+food,+gae,+commands,+qtmode,+aho, +recipe, +sin,+loli,+flip,+ .... YET')
     if message.content.startswith('+qtmode'):
         await message.channel.send('qt mode activated uwu >.<')
     if message.content.startswith('+recipe'):
