@@ -63,6 +63,8 @@ async def on_message(message):
         msg = "does this mention work? <@{}>".format(myid)
         await message.channel.send(msg)
         await message.channel.send(discord.Guild.members)
+    if message.content.startswith('+testmsg'):
+      await message.channel.send(message.content)
     if message.content.startswith('+sin'):
         await message.channel.send('aapko apne paapon ka pashchatap karna chahiye| vah tumhe nasht kar denge|aap koi mauka nahi khade hai| tum usko haath par bhuktoge| pachtana|')
 client.run("ODU3NDY3MjIyODM3NTU5Mjk2.YNQAlA.N8wDKWubrCDivSnZemT_08nPujA")
