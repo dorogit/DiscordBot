@@ -60,7 +60,6 @@ async def on_message(message):
     if message.content.startswith('+loli'):
         await message.channel.send("{} likes little schoolgirls >:(".format(message.author))
     if message.content.startswith('+spam'):
-      await message.channel.send("git updated and pushed to heroku 2")
       list = message.content.split()
       msg = list[1]
       for num in range(10):
