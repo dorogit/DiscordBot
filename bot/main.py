@@ -13,6 +13,7 @@ async def on_ready():
 async def on_message(message):
     msg = ""
     user = message.author
+    myid = None
     discord.utils.get
     if message.author == client.user:
         return
@@ -52,7 +53,9 @@ async def on_message(message):
     if message.content.startswith('+spamtest'):
         await message.channel.send('updated')
         await message.channel.send(user.mention)
-        await message.channel.send(client.user.id)
+        myid = client.user.id
+        msg = "does this mention work? {}".format(myid)
+        await message.channel.send(msg)
     if message.content.startswith('+sin'):
         await message.channel.send('aapko apne paapon ka pashchatap karna chahiye| vah tumhe nasht kar denge|aap koi mauka nahi khade hai| tum usko haath par bhuktoge| pachtana|')
 client.run("ODU3NDY3MjIyODM3NTU5Mjk2.YNQAlA.N8wDKWubrCDivSnZemT_08nPujA")
