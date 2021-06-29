@@ -13,7 +13,7 @@ async def on_ready():
 async def on_message(message):
     msg = ""
     user1 = message.author
-     myid = '<@201909896357216256>'
+    myid = '<@201909896357216256>'
     if message.author == client.user:
         return
     if message.content.startswith('+hello'):
