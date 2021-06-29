@@ -2,7 +2,6 @@ import discord
 import os
 
 client = discord.Client()
-guild = client.get_guild(guild = client.get_guild(server id))
 
 
 @client.event
