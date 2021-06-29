@@ -49,7 +49,7 @@ async def on_message(message):
         await message.channel.send(msg)
     if message.content.startswith('+gae'):
         msg = '{} u gae'.format(message.author)
-        await message.channel.send(msg)
+        await message.channel.send(msg[5:msg.length()])
     if message.content.startswith('+commands'):
         await message.channel.send('only these commands are available :')
         await message.channel.send('+hello,+qt,+tensai (this one is really cool),+ID,+help,+who,+owo,+food,+gae,+commands,+spam @user,+qtmode,+aho, +recipe, +sin,+loli,+flip,+ .... YET')
@@ -60,9 +60,9 @@ async def on_message(message):
     if message.content.startswith('+loli'):
         await message.channel.send("{} likes little schoolgirls >:(".format(message.author))
     if message.content.startswith('+spam'):
-      msg = message.content.slice(5)
+      msg = message.content
       for num in range(10):
-        await message.channel.send(msg)
+        await message.channel.send(msg[5:len(msg)])
     if message.content.startswith('+sin'):
         await message.channel.send('aapko apne paapon ka pashchatap karna chahiye| vah tumhe nasht kar denge|aap koi mauka nahi khade hai| tum usko haath par bhuktoge| pachtana|')
 client.run("ODU3NDY3MjIyODM3NTU5Mjk2.YNQAlA.N8wDKWubrCDivSnZemT_08nPujA")
