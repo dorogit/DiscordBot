@@ -55,6 +55,18 @@ async def on_message(message):
         await message.channel.send('+hello,+qt,+tensai (this one is really cool),+ID,+help,+who,+owo,+food,+gae,+commands,+spam @user,+qtmode,+aho, +recipe, +sin,+loli,+flip,+ .... YET')
     if message.content.startswith('+qtmode'):
         await message.channel.send('qt mode activated uwu >.<')
+    if message.content.startswith('+wisdom'):
+      a = random.randint(1,5)
+      if a == 1:
+        await message.channel.send('लूट सके तो लूट ले, राम नाम की लूट । पाछे फिर पछ्ताओगे, प्राण जाही जब छूट ।।')
+      if a == 2:
+        await message.channel.send('जाति न पूछो साधु की, पूछ लीजिये ज्ञान, मोल करो तलवार का, पड़ा रहन दो म्यान।')
+      if a == 3:
+        await message.channel.send('धीरे-धीरे रे मना, धीरे सब कुछ होय, माली सींचे सौ घड़ा, ॠतु आए फल होय।')
+      if a == 4:
+        await message.channel.send('तिनका कबहुँ ना निन्दिये, जो पाँवन तर होय, कबहुँ उड़ी आँखीन पड़े, तो पिर घनेरि होय।')
+      if a == 5:
+        await message.channel.send('काल करे सो आज कर, आज करे सो अब । पल में प्रलय होएगी, बहुरी करेगा कब ।।')
     if message.content.startswith('+recipe'):
         await message.channel.send("Biryani: A mild, rice-based dish cooked with meat and/or vegetables and served with yoghurty sauce Chaat: Savoury snacks, often made with potato or chick peas Dahl: A lentil curry similar to thick lentil soup Elaichi: Cardamom Firni: Rice pudding with saffron and nuts Gosht: Meat, usually lamb Hari Mirch: Green chilli Idli: A savoury lentil cake Jalfrezi: A spicy dish cooked with ginger and chilli Kachori: Crisp pastry rounds with spiced mung dahl or pea filling Lassi: A yoghurt drink, ordered with salt or sugar, sometimes with fruit. Ideal to cool a fiery palate Murgh: Chicken Naan: Flatbreads cooked in a large tandoor oven Onion bhaji: Crispy deep-fried onion balls Peshwari: Bread or dish with sweet dry fruit and nuts Quinoa Pilaf: A spicy Indian preparation of the seed Rasmalai: A traditional dessert of sweet cottage cheese dumplings, topped with saffron Saslik: Anything grilled Tandoori: Baked in a clay/mud oven Udrak: Ginger Vindaloo: Hot curry, often with potato. Xacuti: A Goan dish made with lamb or chicken, coconut and a complex mix of roasted then ground spices Yakhini: Soup or gravy Zeera: Cumin")
     if message.content.startswith('+loli'):
