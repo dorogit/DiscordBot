@@ -60,8 +60,7 @@ async def on_message(message):
     if message.content.startswith('+loli'):
         await message.channel.send("{} likes little schoolgirls >:(".format(message.author))
     if message.content.startswith('+spam'):
-      list = message.content.split()
-      msg = list[1]
+      msg = message.content.slice(5)
       for num in range(10):
         await message.channel.send(msg)
     if message.content.startswith('+sin'):
