@@ -12,8 +12,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     msg = ""
-    user = message.author
-    myid = Client.get_user_info(id)
+    user = None
     if message.author == client.user:
         return
     if message.content.startswith('+hello'):
