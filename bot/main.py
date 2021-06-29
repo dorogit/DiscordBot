@@ -52,7 +52,7 @@ async def on_message(message):
     if message.content.startswith('+loli'):
         await message.channel.send("{} likes little schoolgirls >:(".format(message.author))
     if message.content.startswith('+spamtest'):
-        await message.channel.send('updated')
+        await message.channel.send('updated1')
         myid = client.user.id
         msg = "does this mention work? <@{}>".format(myid)
         await message.channel.send(msg)
