@@ -13,10 +13,9 @@ async def on_ready():
 async def on_message(message):
     msg = ""
     user1 = message.author
-    list = []
+     myid = '<@201909896357216256>'
     if message.author == client.user:
         return
-
     if message.content.startswith('+hello'):
         await message.channel.send('hi!')
     if message.content.startswith('+qt'):
@@ -51,8 +50,7 @@ async def on_message(message):
     if message.content.startswith('+loli'):
         await message.channel.send("{} likes little schoolgirls >:(".format(message.author))
     if message.content.startswith('+spamtest'):
-        list = list.append(message.content)
-        await message.channel.send(list)
+        await message.channel.send(myid)
     if message.content.startswith('+sin'):
         await message.channel.send('aapko apne paapon ka pashchatap karna chahiye| vah tumhe nasht kar denge|aap koi mauka nahi khade hai| tum usko haath par bhuktoge| pachtana|')
 client.run("ODU3NDY3MjIyODM3NTU5Mjk2.YNQAlA.N8wDKWubrCDivSnZemT_08nPujA")
