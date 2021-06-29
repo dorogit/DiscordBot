@@ -16,6 +16,7 @@ async def on_message(message):
     user = message.author
     user1 = None
     myid = None
+    spam = ""
     list = []
     a = None
     discord.utils.get
@@ -58,17 +59,13 @@ async def on_message(message):
         await message.channel.send("Biryani: A mild, rice-based dish cooked with meat and/or vegetables and served with yoghurty sauce Chaat: Savoury snacks, often made with potato or chick peas Dahl: A lentil curry similar to thick lentil soup Elaichi: Cardamom Firni: Rice pudding with saffron and nuts Gosht: Meat, usually lamb Hari Mirch: Green chilli Idli: A savoury lentil cake Jalfrezi: A spicy dish cooked with ginger and chilli Kachori: Crisp pastry rounds with spiced mung dahl or pea filling Lassi: A yoghurt drink, ordered with salt or sugar, sometimes with fruit. Ideal to cool a fiery palate Murgh: Chicken Naan: Flatbreads cooked in a large tandoor oven Onion bhaji: Crispy deep-fried onion balls Peshwari: Bread or dish with sweet dry fruit and nuts Quinoa Pilaf: A spicy Indian preparation of the seed Rasmalai: A traditional dessert of sweet cottage cheese dumplings, topped with saffron Saslik: Anything grilled Tandoori: Baked in a clay/mud oven Udrak: Ginger Vindaloo: Hot curry, often with potato. Xacuti: A Goan dish made with lamb or chicken, coconut and a complex mix of roasted then ground spices Yakhini: Soup or gravy Zeera: Cumin")
     if message.content.startswith('+loli'):
         await message.channel.send("{} likes little schoolgirls >:(".format(message.author))
-    if message.content.startswith('+spamtest'):
-        await message.channel.send('updated2')
-        myid = client.user.id
-        msg = "does this mention work? <@{}>".format(myid)
-        await message.channel.send(msg)
-        await message.channel.send(discord.Guild.members)
-    if message.content.startswith('+testmsg'):
-      await message.channel.send("git updated and pushed to heroku ")
+    if message.content.startswith('+spamuser'):
+      await message.channel.send("git updated and pushed to heroku 2")
       list = message.content.split()
       msg = list[1]
-      await message.channel.send(msg)
+      for num in range(50):
+        spam +=msg 
+      await message.channel.send(spam)
     if message.content.startswith('+sin'):
         await message.channel.send('aapko apne paapon ka pashchatap karna chahiye| vah tumhe nasht kar denge|aap koi mauka nahi khade hai| tum usko haath par bhuktoge| pachtana|')
 client.run("ODU3NDY3MjIyODM3NTU5Mjk2.YNQAlA.N8wDKWubrCDivSnZemT_08nPujA")
