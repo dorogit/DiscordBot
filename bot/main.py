@@ -52,7 +52,7 @@ async def on_message(message):
         await message.channel.send(msg[5:msg.length()])
     if message.content.startswith('+commands'):
         await message.channel.send('only these commands are available :')
-        await message.channel.send('+hello,+qt,+tensai (this one is really cool),+ID,+help,+who,+owo,+food,+gae,+commands,+spam @user,+qtmode,+aho, +recipe, +sin,+loli,+flip,+ .... YET')
+        await message.channel.send('+hello,+qt,+tensai (this one is really cool),+ID,+wisdom,+help,+who,+owo,+food,+gae,+commands,+spam @user,+qtmode,+aho, +recipe, +sin,+loli,+flip,+ .... YET')
     if message.content.startswith('+qtmode'):
         await message.channel.send('qt mode activated uwu >.<')
     if message.content.startswith('+wisdom'):
