@@ -54,7 +54,7 @@ async def on_message(message):
         await message.channel.send('updated')
         await message.channel.send(user.mention)
         myid = client.user.id
-        msg = "does this mention work? {}".format(myid)
+        msg = "does this mention work? <@{}>".format(myid)
         await message.channel.send(msg)
     if message.content.startswith('+sin'):
         await message.channel.send('aapko apne paapon ka pashchatap karna chahiye| vah tumhe nasht kar denge|aap koi mauka nahi khade hai| tum usko haath par bhuktoge| pachtana|')
