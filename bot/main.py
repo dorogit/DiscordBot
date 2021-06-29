@@ -13,6 +13,7 @@ async def on_ready():
 async def on_message(message):
     msg = ""
     user = message.author
+    user1 = None
     myid = None
     discord.utils.get
     if message.author == client.user:
@@ -56,6 +57,8 @@ async def on_message(message):
         myid = client.user.id
         msg = "does this mention work? <@{}>".format(myid)
         await message.channel.send(msg)
+        user1 = discord.utils.get(message.guild.members, name='dororo')
+        await message.channel.send(user1)
     if message.content.startswith('+sin'):
         await message.channel.send('aapko apne paapon ka pashchatap karna chahiye| vah tumhe nasht kar denge|aap koi mauka nahi khade hai| tum usko haath par bhuktoge| pachtana|')
 client.run("ODU3NDY3MjIyODM3NTU5Mjk2.YNQAlA.N8wDKWubrCDivSnZemT_08nPujA")
