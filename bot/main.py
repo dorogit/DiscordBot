@@ -1,5 +1,6 @@
 import discord
 import os
+import random
 
 client = discord.Client()
 guild = client.get_guild(692625157369495582)
@@ -15,6 +16,7 @@ async def on_message(message):
     user = message.author
     user1 = None
     myid = None
+    a = None
     discord.utils.get
     if message.author == client.user:
         return
@@ -27,7 +29,11 @@ async def on_message(message):
     if message.content.startswith('+ID'):
         await message.channel.send(message.author)
     if message.content.startswith('+help'):
+      a= random.randint(1, 2)
+      if a == 1:
         await message.channel.send('I will try to roast or have fun with you depending on what you type so grow a pair and dont get offended uwu. Dm <@681151593064038494> if you want something added, or type +commands.')
+      if a == 2:
+        await message.channel.send("no")
     if message.content.startswith('+who'):
         await message.channel.send('ahobot at your service!')
     if message.content.startswith('+owo'):
