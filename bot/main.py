@@ -52,11 +52,11 @@ async def on_message(message):
     if message.content.startswith('+loli'):
         await message.channel.send("{} likes little schoolgirls >:(".format(message.author))
     if message.content.startswith('+spamtest'):
-        await message.channel.send('updated1')
+        await message.channel.send('updated2')
         myid = client.user.id
         msg = "does this mention work? <@{}>".format(myid)
         await message.channel.send(msg)
-        await message.channel.send(discord.guild.members)
+        await message.channel.send(discord.Guild.members)
     if message.content.startswith('+sin'):
         await message.channel.send('aapko apne paapon ka pashchatap karna chahiye| vah tumhe nasht kar denge|aap koi mauka nahi khade hai| tum usko haath par bhuktoge| pachtana|')
 client.run("ODU3NDY3MjIyODM3NTU5Mjk2.YNQAlA.N8wDKWubrCDivSnZemT_08nPujA")
