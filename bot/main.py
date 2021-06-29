@@ -50,9 +50,10 @@ async def on_message(message):
     if message.content.startswith('+loli'):
         await message.channel.send("{} likes little schoolgirls >:(".format(message.author))
     if message.content.startswith('+spamtest'):
-        user = discord.utils.get(message.server.members, name = 'dororo', discriminator = 9523)
-        await message.channel.send(user.mention)
         await message.channel.send('updated')
+        user = discord.utils.get(message.server.members)
+        await message.channel.send(user.mention)
+        await message.channel.send(message.server.members)
     if message.content.startswith('+sin'):
         await message.channel.send('aapko apne paapon ka pashchatap karna chahiye| vah tumhe nasht kar denge|aap koi mauka nahi khade hai| tum usko haath par bhuktoge| pachtana|')
 client.run("ODU3NDY3MjIyODM3NTU5Mjk2.YNQAlA.N8wDKWubrCDivSnZemT_08nPujA")
