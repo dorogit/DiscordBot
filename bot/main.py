@@ -64,7 +64,7 @@ async def on_message(message):
     if message.content.startswith('+gae'):
         msg = '{} u gae'.format(message.author)
         await message.channel.send(msg[5:msg.length()])
-    if message.comtent.startswith('+tuesday'):
+    if message.content.startswith('+tuesday'):
       await message.channel.send('आज मंगलवार है, तोते को बुखार है, तोते का लागी सुई, सारे नाचो हुई हुई')
     if message.content.startswith('+commands'):
         await message.channel.send('only these commands are available :')
