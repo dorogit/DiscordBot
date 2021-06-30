@@ -45,8 +45,22 @@ async def on_message(message):
     if message.content.startswith('+aho'):
         await message.channel.send('whomst has summoned the almighty one')
     if message.content.startswith('+food'):
-        msg = 'no food for {} hmph!'.format(message.author)
-        await message.channel.send(msg)
+        a = random.randint(1,5)
+        if a == 1:
+          msg = 'no food for {} hmph!'.format(message.author)
+          await message.channel.send(msg)
+        if a == 2:
+          msg = '{} indulges in the luscious taste of air'.format(message.author)
+          await message.channel.send(msg)
+        if a == 3:
+          msg = '{} I dropped the pizza gomennasai >^<'.format(message.author)
+          await message.channel.send(msg)
+        if a == 4:
+          msg = 'food is not something you acquire for free. You must for for it and earn it from your own blood and sweat. tatakae'
+          await message.channel.send(msg)
+        if a == 5:
+          msg = 'I will eat you'
+          await message.channel.send(msg)
     if message.content.startswith('+gae'):
         msg = '{} u gae'.format(message.author)
         await message.channel.send(msg[5:msg.length()])
