@@ -92,35 +92,35 @@ async def on_message(message):
     if message.content.startswith('+test'):
       a = random.randint(1,15)
       if a == 1:
-        await message.content.send('Why dont they show vaginas in anime? Because it would be a plot hole')
+        await message.channel.send('Why dont they show vaginas in anime? Because it would be a plot hole')
       if a == 2:
-        await message.content.send('Where do anime girls live? Ohio')
+        await message.channel.send('Where do anime girls live? Ohio')
       if a == 3:
-        await message.content.send('How many tickles will turn on an Anime girl? Tentacles')
+        await message.channel.send('How many tickles will turn on an Anime girl? Tentacles')
       if a == 4:
-        await message.content.send('What character do you get when you cross a Sailor with a Cow? Sailor Moo')
+        await message.channel.send('What character do you get when you cross a Sailor with a Cow? Sailor Moo')
       if a == 5:
-        await message.content.send('Why did Saitama get fired from his job when working in the railways as a conductor? Because he had to punch a ticket')
+        await message.channel.send('Why did Saitama get fired from his job when working in the railways as a conductor? Because he had to punch a ticket')
       if a == 6:
-        await message.content.send('What does MonkeyD. Luffy say when you want another piece of the pie? You can only have One piece')
+        await message.channel.send('What does MonkeyD. Luffy say when you want another piece of the pie? You can only have One piece')
       if a == 7:
-        await message.content.send('Why does Miso not like the world anymore? Because there is no Light')
+        await message.channel.send('Why does Miso not like the world anymore? Because there is no Light')
       if a == 8:
-        await message.content.send('what do you call a titan who cant swim? a titanic')
+        await message.channel.send('what do you call a titan who cant swim? a titanic')
       if a == 9:
-        await message.content.send('How many Dragon Ball Z characters does it take to screw in a lightbulb? Just one, but itll take six episodes')
+        await message.channel.send('How many Dragon Ball Z characters does it take to screw in a lightbulb? Just one, but itll take six episodes')
       if a == 10:
-        await message.content.send('What do Saiyans wear to the beach? Trunks.')
+        await message.channel.send('What do Saiyans wear to the beach? Trunks.')
       if a == 11:
-        await message.content.send('Where did Vegeta go after death? Into the frieza')
+        await message.channel.send('Where did Vegeta go after death? Into the frieza')
       if a == 12:
-        await message.content.send('What type of novels does L like? Light Novel')
+        await message.channel.send('What type of novels does L like? Light Novel')
       if a == 13:
-        await message.content.send('Why did Goku get into another fight with Vegeta? Because he was Saiyan bad jokes')
+        await message.channel.send('Why did Goku get into another fight with Vegeta? Because he was Saiyan bad jokes')
       if a == 14:
-        await message.content.send('what do you call a factory that makes okay products? A satisfactory')
+        await message.channel.send('what do you call a factory that makes okay products? A satisfactory')
       if a == 15:
-        await message.content.send('sorry I am unfunne')   
+        await message.channel.send('sorry I am unfunne')   
     if message.content.startswith('+sin'):
       await message.channel.send('aapko apne paapon ka pashchatap karna chahiye| vah tumhe nasht kar denge|aap koi mauka nahi khade hai| tum usko haath par bhuktoge| pachtana|')
         
