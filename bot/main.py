@@ -89,6 +89,39 @@ async def on_message(message):
       msg = message.content
       for num in range(10):
         await message.channel.send(msg[5:len(msg)])
+    if message.content.startswith('+funne'):
+      a = random.randint(1,15)
+      if a == 1:
+        await message.content.send('Why dont they show vaginas in anime? Because it would be a plot hole')
+      if a == 2:
+        await message.content.send('Where do anime girls live? Ohio')
+      if a == 3:
+        await message.content.send('How many tickles will turn on an Anime girl? Tentacles')
+      if a == 4:
+        await message.content.send('What character do you get when you cross a Sailor with a Cow? Sailor Moo')
+      if a == 5:
+        await message.content.send(' Why did Saitama get fired from his job when working in the railways as a conductor? Because he had to punch a ticket')
+      if a == 6:
+        await message.content.send('What does MonkeyD. Luffy say when you want another piece of the pie? You can only have 'One Piece')
+      if a == 7:
+        await message.content.send('Why does Miso not like the world anymore? Because there is no Light')
+      if a == 8:
+        await message.content.send('')
+      if a == 9:
+        await message.content.send('')
+      if a == 10:
+        await message.content.send('')
+      if a == 11:
+        await message.content.send('')
+      if a == 12:
+        await message.content.send('')
+      if a == 13:
+        await message.content.send('')
+      if a == 14:
+        await message.content.send('')
+      if a == 15:
+        await message.content.send('')
+        
     if message.content.startswith('+sin'):
         await message.channel.send('aapko apne paapon ka pashchatap karna chahiye| vah tumhe nasht kar denge|aap koi mauka nahi khade hai| tum usko haath par bhuktoge| pachtana|')
 client.run("ODU3NDY3MjIyODM3NTU5Mjk2.YNQAlA.N8wDKWubrCDivSnZemT_08nPujA")
