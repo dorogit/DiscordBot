@@ -64,9 +64,11 @@ async def on_message(message):
     if message.content.startswith('+gae'):
         msg = '{} u gae'.format(message.author)
         await message.channel.send(msg[5:msg.length()])
+    if message.comtent.startswith('+tuesday'):
+      await message.channel.send('आज मंगलवार है, तोते को बुखार है, तोते का लागी सुई, सारे नाचो हुई हुई')
     if message.content.startswith('+commands'):
         await message.channel.send('only these commands are available :')
-        await message.channel.send('+hello,+qt,+tensai (this one is really cool),+ID,+wisdom,+help,+who,+owo,+unfunne,+food,+gae,+commands,+spam @user,+qtmode,+aho, +recipe, +sin,+loli,+flip,+ .... YET')
+        await message.channel.send('+hello,+qt,+tensai (this one is really cool),+ID,+tuesday,+wisdom,+help,+who,+owo,+unfunne,+food,+gae,+commands,+spam @user,+qtmode,+aho, +recipe, +sin,+loli,+flip,+ .... YET')
     if message.content.startswith('+qtmode'):
         await message.channel.send('qt mode activated uwu >.<')
     if message.content.startswith('+wisdom'):
