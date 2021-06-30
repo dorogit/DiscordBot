@@ -89,7 +89,7 @@ async def on_message(message):
       msg = message.content
       for num in range(10):
         await message.channel.send(msg[5:len(msg)])
-    if message.content.startswith('+unfunne'):
+    if message.content.startswith('+test'):
       a = random.randint(1,15)
       if a == 1:
         await message.content.send('Why dont they show vaginas in anime? Because it would be a plot hole')
@@ -100,7 +100,7 @@ async def on_message(message):
       if a == 4:
         await message.content.send('What character do you get when you cross a Sailor with a Cow? Sailor Moo')
       if a == 5:
-        await message.content.send(' Why did Saitama get fired from his job when working in the railways as a conductor? Because he had to punch a ticket')
+        await message.content.send('Why did Saitama get fired from his job when working in the railways as a conductor? Because he had to punch a ticket')
       if a == 6:
         await message.content.send('What does MonkeyD. Luffy say when you want another piece of the pie? You can only have One piece')
       if a == 7:
@@ -108,7 +108,7 @@ async def on_message(message):
       if a == 8:
         await message.content.send('what do you call a titan who cant swim? a titanic')
       if a == 9:
-        await message.content.send('How many Dragon Ball Z characters does it take to screw in a lightbulb? Just one, but it’ll take six episodes')
+        await message.content.send('How many Dragon Ball Z characters does it take to screw in a lightbulb? Just one, but itll take six episodes')
       if a == 10:
         await message.content.send('What do Saiyans wear to the beach? Trunks.')
       if a == 11:
@@ -118,10 +118,9 @@ async def on_message(message):
       if a == 13:
         await message.content.send('Why did Goku get into another fight with Vegeta? Because he was Saiyan bad jokes')
       if a == 14:
-        await message.content.send('. What do you call a factory that makes okay products? A satisfactory')
+        await message.content.send('what do you call a factory that makes okay products? A satisfactory')
       if a == 15:
-        await message.content.send('sorry I am unfunne ;-;')
-        
+        await message.content.send('sorry I am unfunne ;-;')   
     if message.content.startswith('+sin'):
         await message.channel.send('aapko apne paapon ka pashchatap karna chahiye| vah tumhe nasht kar denge|aap koi mauka nahi khade hai| tum usko haath par bhuktoge| pachtana|')
         
