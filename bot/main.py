@@ -102,7 +102,7 @@ async def on_message(message):
       if a == 5:
         await message.content.send(' Why did Saitama get fired from his job when working in the railways as a conductor? Because he had to punch a ticket')
       if a == 6:
-        await message.content.send('What does MonkeyD. Luffy say when you want another piece of the pie? You can only have One piece)
+        await message.content.send('What does MonkeyD. Luffy say when you want another piece of the pie? You can only have One piece')
       if a == 7:
         await message.content.send('Why does Miso not like the world anymore? Because there is no Light')
       if a == 8:
