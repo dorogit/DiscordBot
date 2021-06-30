@@ -89,7 +89,7 @@ async def on_message(message):
       msg = message.content
       for num in range(10):
         await message.channel.send(msg[5:len(msg)])
-    if message.content.startswith('+test'):
+    if message.content.startswith('+unfunne'):
       a = random.randint(1,15)
       if a == 1:
         await message.channel.send('Why dont they show vaginas in anime? Because it would be a plot hole')
