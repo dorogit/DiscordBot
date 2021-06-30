@@ -120,7 +120,7 @@ async def on_message(message):
       if a == 14:
         await message.content.send('what do you call a factory that makes okay products? A satisfactory')
       if a == 15:
-        await message.content.send('sorry I am unfunne ;-;')   
+        await message.content.send('sorry I am unfunne')   
     if message.content.startswith('+sin'):
         await message.channel.send('aapko apne paapon ka pashchatap karna chahiye| vah tumhe nasht kar denge|aap koi mauka nahi khade hai| tum usko haath par bhuktoge| pachtana|')
         
