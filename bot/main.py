@@ -72,6 +72,8 @@ async def on_message(message):
         await message.channel.send('+hello,+qt,+tensai (this one is really cool),+ID,+tuesday,+wisdom,+help,+who,+owo,+unfunne,+food,+gae,+commands,+spam @user,+qtmode,+aho, +recipe, +sin,+loli,+flip,+ .... YET')
     if message.content.startswith('+qtmode'):
         await message.channel.send('qt mode activated uwu >.<')
+    if message.content.startswith("+good"):
+      await message.channel.send("thamk >w<")
     if message.content.startswith('+wisdom'):
       a = random.randint(1,5)
       if a == 1:
