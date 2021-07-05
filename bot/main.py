@@ -19,6 +19,7 @@ async def on_message(message):
     spam = ""
     list = []
     a = None
+    spamNum = 0
     discord.utils.get
     if message.author == client.user:
         return
@@ -89,13 +90,13 @@ async def on_message(message):
         await message.channel.send("{} likes little schoolgirls >:(".format(message.author))
     if message.content.startswith('+spam'):
       msg = message.content
-      if a < 4 :
+      if spamNum < 4 :
         for num in range(10):
           await message.channel.send(msg[5:len(msg)])
-          a+=1
-      if a >=4:
+          spamNum += 1
+      if spamNum >=4:
         await message.channel.send('Mujhpar daya karo')
-        a = None    
+        spamNum = 0
     if message.content.startswith('+unfunne'):
       a = random.randint(1,15)
       if a == 1:
