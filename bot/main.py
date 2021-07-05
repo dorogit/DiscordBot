@@ -93,7 +93,9 @@ async def on_message(message):
         for num in range(10):
           await message.channel.send(msg[5:len(msg)])
         spam += 1
+        message.channel.send(spam)
       if spam == 5:
+        spam = 0
         a = random.randint(1,5)
         if a == 1:
           await message.channel.send('mujhpar daya karo')
@@ -105,7 +107,6 @@ async def on_message(message):
           await message.channel.send("nahi")
         if a == 5:
           await message.channel.send('bas karo spam')
-        spam = 0
     if message.content.startswith('+unfunne'):
       a = random.randint(1,15)
       if a == 1:
