@@ -18,6 +18,7 @@ async def on_message(message):
     user1 = None
     myid = None
     spam = 1
+    newmsg = ""
     list = []
     a = None
     if message.author == client.user:
@@ -88,9 +89,10 @@ async def on_message(message):
     if message.content.startswith('+loli'):
         await message.channel.send("{} likes little schoolgirls >:(".format(message.author))
     if message.content.startswith('+spam'):
+      newmsg = "{}".format(spam)
       msg = message.content
       if spam < 5:
-        message.channel.send(spam)
+        message.channel.send(newmsg)
         for num in range(10):
           await message.channel.send(msg[5:len(msg)])
         spam += 1
