@@ -89,12 +89,12 @@ async def on_message(message):
     if message.content.startswith('+loli'):
         await message.channel.send("{} likes little schoolgirls >:(".format(message.author))
     if message.content.startswith('+spam'):
+      spam += 1
       await message.channel.send(spam)
       msg = message.content
       if spam < 5:
         for num in range(10):
           await message.channel.send(msg[5:len(msg)])
-        spam += 1
       if spam == 5:
         spam = 0
         a = random.randint(1,5)
