@@ -20,7 +20,6 @@ async def on_message(message):
     spam = ""
     list = []
     a = None
-    discord.utils.get
     if message.author == client.user:
         return
     if message.content.startswith('+hello'):
