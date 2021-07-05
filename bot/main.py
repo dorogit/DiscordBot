@@ -89,7 +89,7 @@ async def on_message(message):
     if message.content.startswith('+loli'):
         await message.channel.send("{} likes little schoolgirls >:(".format(message.author))
     if message.content.startswith('+spam'):
-      message.channel.send(spam)
+      message.channel.send("working")
       msg = message.content
       if spam < 5:
         for num in range(10):
