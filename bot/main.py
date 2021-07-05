@@ -90,10 +90,10 @@ async def on_message(message):
     if message.content.startswith('+spam'):
       msg = message.content
       if spam < 5:
+        message.channel.send(spam)
         for num in range(10):
           await message.channel.send(msg[5:len(msg)])
         spam += 1
-        message.channel.send(spam)
       if spam == 5:
         spam = 0
         a = random.randint(1,5)
