@@ -89,8 +89,7 @@ async def on_message(message):
     if message.content.startswith('+loli'):
         await message.channel.send("{} likes little schoolgirls >:(".format(message.author))
     if message.content.startswith('+spam'):
-      newmsg = "{}".format(spam)
-      message.channel.send(newmsg)
+      message.channel.send(spam)
       msg = message.content
       if spam < 5:
         for num in range(10):
@@ -110,7 +109,7 @@ async def on_message(message):
         if a == 5:
           await message.channel.send('bas karo spam')
     if message.content.startswith("+testupdate"):
-      await message.channel.send("updated")
+      await message.channel.send("updated1")
     if message.content.startswith('+unfunne'):
       a = random.randint(1,15)
       if a == 1:
