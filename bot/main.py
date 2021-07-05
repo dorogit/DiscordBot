@@ -17,7 +17,7 @@ async def on_message(message):
     user = message.author
     user1 = None
     myid = None
-    spam = ""
+    spam = 1
     list = []
     a = None
     if message.author == client.user:
