@@ -17,7 +17,7 @@ async def on_message(message):
     user = message.author
     user1 = None
     myid = None
-    spam = 1
+    spam = None
     newmsg = ""
     list = []
     a = None
