@@ -91,9 +91,9 @@ async def on_message(message):
     if message.content.startswith('+spam'):
       msg = message.content
       if spamNum < 4 :
+        spamNum += 1
         for num in range(10):
           await message.channel.send(msg[5:len(msg)])
-        spamNum += 1
         message.channel.send(spamNum)
       if spamNum = 4:
         await message.channel.send('Mujhpar daya karo')
