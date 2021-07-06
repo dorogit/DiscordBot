@@ -9,7 +9,8 @@ guild = client.get_guild(692625157369495582)
 @client.event
 async def on_ready():
     print('We have logged in as {0.user}'.format(client))
-
+    
+spam = 0
 
 @client.event
 async def on_message(message):
@@ -17,7 +18,7 @@ async def on_message(message):
     user = message.author
     user1 = None
     myid = None
-    spam = 0
+    global spam
     newmsg = ""
     list = []
     a = None
