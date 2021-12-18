@@ -26,8 +26,8 @@ async def on_message(message):
         return
     if message.content.startswith('+hello'):
         await message.channel.send('hi!')
-    if message.content.startswith('+qt'):
-        await message.channel.send('qt XDXD')
+    if message.content.startswith('+dard'):
+        await message.channel.send('दुःख दर्द अफ़सोस | वेदना | व्यथा | शोक संताप मातम पीड़ा | विपदा | खेद | तकलीफ़ | कसक अवसाद आफ़त कुढ़न खिन्नता | गम | ग्लानि | ज़हमत | टीस ताप त्रास कष्ट | दरद दुखड़ा | बला बियाधि | मलाल | मुसीबत | यंत्रणा यातना रंज | रंजोगम | आर्ति | विषाद | शूल संकट | दुःख दर्द | अफ़सोस | वेदना | व्यथा | शोक | संताप मातम | पीड़ा | विपदा | खेद | तकलीफ़ | कसक | अवसाद | आफ़त | कुढ़न खिन्नता गम | ग्लानि ज़हमत | टीस ताप त्रास कष्ट दरद दुखड़ा बला | बियाधि | मलाल | मुसीबत यंत्रणा | यातना | रंज रंजोगम | आर्ति | विषाद | शूल संकट दुःख दर्द | अफ़सोस वेदना |')
     if message.content.startswith('+tensai'):
         await message.channel.send('loli master tensai!')
     if message.content.startswith('+ID'):
@@ -40,8 +40,6 @@ async def on_message(message):
         await message.channel.send("no")
     if message.content.startswith('+who'):
         await message.channel.send('ahobot at your service!')
-    if message.content.startswith('+dard'):
-        await message.channel.send('दुःख दर्द अफ़सोस | वेदना | व्यथा | शोक संताप मातम पीड़ा | विपदा | खेद | तकलीफ़ | कसक अवसाद आफ़त कुढ़न खिन्नता | गम | ग्लानि | ज़हमत | टीस ताप त्रास कष्ट | दरद दुखड़ा | बला बियाधि | मलाल | मुसीबत | यंत्रणा यातना रंज | रंजोगम | आर्ति | विषाद | शूल संकट | दुःख दर्द | अफ़सोस | वेदना | व्यथा | शोक | संताप मातम | पीड़ा | विपदा | खेद | तकलीफ़ | कसक | अवसाद | आफ़त | कुढ़न खिन्नता गम | ग्लानि ज़हमत | टीस ताप त्रास कष्ट दरद दुखड़ा बला | बियाधि | मलाल | मुसीबत यंत्रणा | यातना | रंज रंजोगम | आर्ति | विषाद | शूल संकट दुःख दर्द | अफ़सोस वेदना |')
     if message.content.startswith('+owo'):
         await message.channel.send('uwu')
     if message.content.startswith('+flip'):
