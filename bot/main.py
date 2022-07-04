@@ -26,6 +26,8 @@ async def on_message(message):
         return
     if message.content.startswith('+hello'):
         await message.channel.send('hi!')
+    if message.content.startswith('+bestgirl'):
+        await message.channel.send('2B')
     if message.content.startswith('+dard'):
         await message.channel.send('दुःख दर्द अफ़सोस | वेदना | व्यथा | शोक संताप मातम पीड़ा | विपदा | खेद | तकलीफ़ | कसक अवसाद आफ़त कुढ़न खिन्नता | गम | ग्लानि | ज़हमत | टीस ताप त्रास कष्ट | दरद दुखड़ा | बला बियाधि | मलाल | मुसीबत | यंत्रणा यातना रंज | रंजोगम | आर्ति | विषाद | शूल संकट | दुःख दर्द | अफ़सोस | वेदना | व्यथा | शोक | संताप मातम | पीड़ा | विपदा | खेद | तकलीफ़ | कसक | अवसाद | आफ़त | कुढ़न खिन्नता गम | ग्लानि ज़हमत | टीस ताप त्रास कष्ट दरद दुखड़ा बला | बियाधि | मलाल | मुसीबत यंत्रणा | यातना | रंज रंजोगम | आर्ति | विषाद | शूल संकट दुःख दर्द | अफ़सोस वेदना |')
     if message.content.startswith('+tensai'):
