@@ -105,7 +105,7 @@ async def on_message(message):
         if a == 3:
           await message.channel.send('im quitting bhaut ho gaya')
         if a == 4:
-          await message.channel.send("nahi")
+          await message.channel.send("assi hazzaar baar spam karwa liya assi hazaar baar. Tera discord privilege jayega isme. Tera discord privilege chala jayenga")
         if a == 5:
           await message.channel.send('bas karo spam')
         spam = 0
