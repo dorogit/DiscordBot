@@ -42,6 +42,11 @@ async def on_message(message):
         await message.channel.send('uwu')
     if message.content.startswith('+flip'):
         await message.channel.send('(╯°□°）╯︵ ┻━┻')
+    if message.content.startswith('+worthy'):
+        if message.author == "dororo#9232":
+          await message.channel.send('you are worthy')
+        else:
+          await message.channel.send('you are not worthy')
     if message.content.startswith('+aho'):
         await message.channel.send('whomst has summoned the almighty one')
     if message.content.startswith('+food'):
